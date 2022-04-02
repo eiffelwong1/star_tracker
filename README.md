@@ -1,8 +1,8 @@
 # star_tracker
 a smart Alt-Az type star tracker
 
-recrutment ppt:
-
+idea ppt:
+https://docs.google.com/presentation/d/1V09LMWxtM6EQ7cZHFbPJ3HRUoUjyuCmjtu40eXvP8dM/edit?usp=sharing
 
 worm gear: 
 https://www.thingiverse.com/thing:4458332
