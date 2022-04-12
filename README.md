@@ -18,3 +18,7 @@ plate solving:
 astronet API (internet needed) https://astroquery.readthedocs.io/en/latest/astrometry_net/astrometry_net.html 
 unknown (needs internet) https://github.com/tkarabela/platesolve-polar-align/blob/master/platesolve-polar-align.ipynb
 https://github.com/topics/plate-solving
+
+## Software
+
+pi4 gadget mode: https://howchoo.com/pi/raspberry-pi-gadget-mode#flash-raspberry-pi-os-onto-your-sd-card
