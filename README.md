@@ -14,11 +14,11 @@ https://docs.google.com/document/d/1L_Es6k-k7RpyGgrmrHhm6hPq1YzO1r2z4-Yxdts5CSU/
 worm gear: 
 https://www.thingiverse.com/thing:4458332
 
+## Software
+
+pi4 gadget mode: https://howchoo.com/pi/raspberry-pi-gadget-mode#flash-raspberry-pi-os-onto-your-sd-card
+
 plate solving:
 astronet API (internet needed) https://astroquery.readthedocs.io/en/latest/astrometry_net/astrometry_net.html 
 unknown (needs internet) https://github.com/tkarabela/platesolve-polar-align/blob/master/platesolve-polar-align.ipynb
 https://github.com/topics/plate-solving
-
-## Software
-
-pi4 gadget mode: https://howchoo.com/pi/raspberry-pi-gadget-mode#flash-raspberry-pi-os-onto-your-sd-card
