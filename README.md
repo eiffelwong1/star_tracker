@@ -8,11 +8,9 @@ https://docs.google.com/presentation/d/1V09LMWxtM6EQ7cZHFbPJ3HRUoUjyuCmjtu40eXvP
 https://docs.google.com/document/d/1-RgK3QuJ4uykZ0ImFwVufxx7JOQnr-Ly_n8QABVvBu4/edit?usp=sharing
 
 ## Hardware
-documentation
-https://docs.google.com/document/d/1L_Es6k-k7RpyGgrmrHhm6hPq1YzO1r2z4-Yxdts5CSU/edit?usp=sharing
-
-worm gear: 
-https://www.thingiverse.com/thing:4458332
+documentation: https://docs.google.com/document/d/1L_Es6k-k7RpyGgrmrHhm6hPq1YzO1r2z4-Yxdts5CSU/edit?usp=sharing
+pi camera spec: https://www.raspberrypi.com/documentation/accessories/camera.html
+worm gear: https://www.thingiverse.com/thing:4458332
 
 ## Software
 
