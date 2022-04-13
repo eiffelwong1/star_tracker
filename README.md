@@ -16,7 +16,7 @@ worm gear: https://www.thingiverse.com/thing:4458332
 
 pi4 gadget mode: https://howchoo.com/pi/raspberry-pi-gadget-mode#flash-raspberry-pi-os-onto-your-sd-card
 
-connect pi4 via: ssh -X pi@raspberrypi.local (-X for enabling X11 server)
+connect pi4 via: `ssh -X pi@raspberrypi.local` (-X for enabling X11 server)
 
 plate solving:
 astronet API (internet needed) https://astroquery.readthedocs.io/en/latest/astrometry_net/astrometry_net.html 
