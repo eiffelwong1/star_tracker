@@ -17,6 +17,8 @@ pi camera spec: https://www.raspberrypi.com/documentation/accessories/camera.htm
 
 worm gear: https://www.thingiverse.com/thing:4458332
 
+*gyroscope
+
 ## Software
 
 pi4 gadget mode: https://howchoo.com/pi/raspberry-pi-gadget-mode#flash-raspberry-pi-os-onto-your-sd-card
