@@ -32,3 +32,6 @@ astronet API (internet needed) https://astroquery.readthedocs.io/en/latest/astro
 unknown (needs internet) https://github.com/tkarabela/platesolve-polar-align/blob/master/platesolve-polar-align.ipynb
 
 https://github.com/topics/plate-solving
+
+3D CAD desgin:
+https://www.autodesk.com/products/fusion-360/personal
