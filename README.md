@@ -17,6 +17,12 @@ pi camera spec: https://www.raspberrypi.com/documentation/accessories/camera.htm
 
 worm gear: https://www.thingiverse.com/thing:4458332
 
+### all amazon link for purchase
+
+1/4" to 1/4" screw: https://www.amazon.com/SmallRig-Double-Head-Stud-Microphone/dp/B007LTH1X2
+bearings: https://www.amazon.com/BESIY-Skateboards-Longboards-Miniature-ABEC%EF%BC%88Pack/dp/B07S1B3MS6
+stepper motors: https://www.amazon.com/ELEGOO-28BYJ-48-ULN2003-Stepper-Arduino/dp/B01CP18J4A
+
 *gyroscope
 
 ## Software
