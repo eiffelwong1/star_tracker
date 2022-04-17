@@ -31,11 +31,7 @@ connect pi4 via: `ssh -X pi@raspberrypi.local` (-X for enabling X11 server)
 
 plate solving:
 
-astronet API (internet needed) https://astroquery.readthedocs.io/en/latest/astrometry_net/astrometry_net.html 
+astronet API (internet needed): https://astroquery.readthedocs.io/en/latest/astrometry_net/astrometry_net.html  
+unknown (needs internet): https://github.com/tkarabela/platesolve-polar-align/blob/master/platesolve-polar-align.ipynb  
+all github plte solve topics: https://github.com/topics/plate-solving  
 
-unknown (needs internet) https://github.com/tkarabela/platesolve-polar-align/blob/master/platesolve-polar-align.ipynb
-
-https://github.com/topics/plate-solving
-
-3D CAD desgin:
-https://www.autodesk.com/products/fusion-360/personal
