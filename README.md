@@ -8,6 +8,10 @@ Project Overview: https://docs.google.com/document/d/1-RgK3QuJ4uykZ0ImFwVufxx7JO
 
 ## Hardware
 
+3D Printing requirements:
+File: f3d ->3mf
+Max Size: 200mm^3
+
 documentation: https://docs.google.com/document/d/1L_Es6k-k7RpyGgrmrHhm6hPq1YzO1r2z4-Yxdts5CSU/edit?usp=sharing  
 pi camera spec: https://www.raspberrypi.com/documentation/accessories/camera.html  
 worm gear: https://www.thingiverse.com/thing:4458332  
