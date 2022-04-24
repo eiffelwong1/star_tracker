@@ -5,7 +5,7 @@ a smart Alt-Az type star tracker
 
 idea ppt: https://docs.google.com/presentation/d/1V09LMWxtM6EQ7cZHFbPJ3HRUoUjyuCmjtu40eXvP8dM/edit?usp=sharing  
 Project Overview: https://docs.google.com/document/d/1-RgK3QuJ4uykZ0ImFwVufxx7JOQnr-Ly_n8QABVvBu4/edit?usp=sharing  
-H/W handwritten notes:
+H/W handwritten notes: see `hardware_combinded_handwritten_notes.pdf`
 
 ## Hardware
 
