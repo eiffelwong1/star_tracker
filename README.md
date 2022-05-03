@@ -37,3 +37,16 @@ astronet API (internet needed): https://astroquery.readthedocs.io/en/latest/astr
 unknown (needs internet): https://github.com/tkarabela/platesolve-polar-align/blob/master/platesolve-polar-align.ipynb  
 all github plte solve topics: https://github.com/topics/plate-solving  
 
+# Papers
+
+https://link.springer.com/content/pdf/10.1023/A:1016391518972.pdf
+
+Star Shape  
+https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8451/84512K/The-improvement-of-CCD-auto-guiding-system-for-25m-telescope/10.1117/12.925642.full?SSO=1
+
+https://www.spiedigitallibrary.org/journals/optical-engineering/volume-33/issue-8/0000/Description-and-analysis-of-an-algorithm-for-star-identification-pointing/10.1117/12.173587.full
+
+https://aip.scitation.org/doi/pdf/10.1063/1.1715829
+
+historical  
+https://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1948ApJ...107...73B&defaultprint=YES&filetype=.pdf
