@@ -50,3 +50,6 @@ https://aip.scitation.org/doi/pdf/10.1063/1.1715829
 
 historical  
 https://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1948ApJ...107...73B&defaultprint=YES&filetype=.pdf
+
+cite this astropi
+https://www.astropy.org/acknowledging.html
