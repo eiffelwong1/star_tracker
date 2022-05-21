@@ -75,10 +75,10 @@ def stepper1(xw):
 
 def stepper2(xw):
 	for x in range(xw):
-		wiringpi.digitalWrite(IN5, caseMap[Steps1][0])
-		wiringpi.digitalWrite(IN6, caseMap[Steps1][1])
-		wiringpi.digitalWrite(IN7, caseMap[Steps1][2])
-		wiringpi.digitalWrite(IN8, caseMap[Steps1][3])
+		wiringpi.digitalWrite(IN5, caseMap[Steps2][0])
+		wiringpi.digitalWrite(IN6, caseMap[Steps2][1])
+		wiringpi.digitalWrite(IN7, caseMap[Steps2][2])
+		wiringpi.digitalWrite(IN8, caseMap[Steps2][3])
 		StepOne2()
 
 
