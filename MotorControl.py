@@ -118,3 +118,6 @@ def main():
 	setup()
 	loop()
 	return 0
+
+
+main()
