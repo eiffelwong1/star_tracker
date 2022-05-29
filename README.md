@@ -54,3 +54,5 @@ https://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle_query?1948ApJ...107...7
 
 cite this astropi
 https://www.astropy.org/acknowledging.html
+
+https://en.wikipedia.org/wiki/International_Celestial_Reference_System_and_Frame
