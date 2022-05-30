@@ -28,7 +28,6 @@ class TrackerMotor():
         self.y_counter = 0
         self.x_speed = 0.001
         self.y_speed = 0.001
-        self.DEFAULT_SPEED = 0.001
         self.go = True
         
 
@@ -54,26 +53,19 @@ class TrackerMotor():
         if event.name == 's':
             self.vert_dir = min( 1, self.vert_dir+1 )
         if event.name == 'x':
-            input()
-            print('x-distance: ')
-            x = float(input())
-            print('y-distance: ')
-            y = float(input())
-            
-            x = int(x / 360.0 * 4096)
-            y = int(y / 360.0 * 4096)
-            self.set_pos(x,y) # set how many steps, press enter first
+            self.set_pos() # set how many steps, press enter first
         if event.name == 'v':
-            input()
-            print('x-speed: ')
-            x = float(input())
-            print('y-speed: ')
-            y = float(input())
-            self.set_speed(x,y) # set the interval between each step, press enter first
+            self.set_speed() # set the interval between each step, press enter first
         if event.name == 'e':
             self.go = False
     
-    def set_pos(self, x, y):
+    def set_pos(self):
+        input()
+        print('x-distance: ')
+        x = int(input())
+        print('y-distance: ')
+        y = int(input())
+        
         if x > 0:
             self.hori_dir = 1
             self.x_counter = x
@@ -87,10 +79,14 @@ class TrackerMotor():
         else:
             self.vert_dir = -1
             self.y_counter = -y
-        self.x_speed = self.DEFAULT_SPEED
-        self.y_speed = self.DEFAULT_SPEED
     
-    def set_speed(self, x, y):
+    def set_speed(self):
+        input()
+        print('x-speed: ')
+        x = float(input())
+        print('y-speed: ')
+        y = float(input())
+        
         if x > 0:
             self.hori_dir = 1
             self.x_speed = x
@@ -151,7 +147,7 @@ def main():
         #print(motor.hori_dir, motor.hori_count, motor.vert_dir, motor.vert_count)
         motor.hori_step()
         motor.vert_step()
-        time.sleep(motor.DEFAULT_SPEED)
+        time.sleep(0.001)
     motor.end()
 
 
