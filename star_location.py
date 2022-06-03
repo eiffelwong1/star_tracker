@@ -10,4 +10,5 @@ observing_time = Time(curDT.strftime("%Y-%m-%d %H:%M:%S"))
 aa = AltAz(location=observing_location, obstime=observing_time)
 
 coord = SkyCoord(ra="04h27m13s", dec="21d43m37s", frame='icrs')
-print(coord.transform_to(aa))
+alt_az_coord = coord.transform_to(aa)
+print(alt_az_coord.alt.degree)
