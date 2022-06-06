@@ -1,15 +1,15 @@
 import RPi.GPIO as GPIO
-import time 
+import time
 
-baseMotorPins = (40, 38, 36, 32)    # define pins connected to four phase ABCD of stepper motor
-quarterMotorPins = (5, 6, 10, 11)    # define pins connected to four phase ABCD of stepper motor
-quarterSwitch = 12
-baseSwitch = 13
+baseMotorPins = (21,20,16,12)    # define pins connected to four phase ABCD of stepper motor
+quarterMotorPins = (19, 13, 6, 5)    # define pins connected to four phase ABCD of stepper motor
+quarterSwitch = 1
+baseSwitch = 7
 CCWStep = (0x01,0x02,0x04,0x08) # define power supply order for rotating anticlockwise 
 CWStep = (0x08,0x04,0x02,0x01)  # define power supply order for rotating clockwise
 
-def setup():    
-	GPIO.setmode(GPIO.BOARD)
+def setup():
+	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(quarterSwitch, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 	GPIO.setup(baseSwitch, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 	for pin in baseMotorPins:
@@ -41,17 +41,23 @@ def motorStop(motor):
             
 def calibrate():
 	while (True):
-		moveSteps(baseMotorPins, 1,3,512)  # rotating 360 deg clockwise, a total of 2048 steps in a circle, 512 cycles
-
-	moveSteps(quarterMotorPins, 1,3,512)  # rotating 360 deg clockwise, a total of 2048 steps in a circle, 512 cycles
+		moveSteps(baseMotorPins, 1,3,1)  # rotating 360 deg clockwise, a total of 2048 steps in a circle, 512 cycles
+		if (GPIO.input(baseSwitch) == GPIO.LOW):
+			print ('Base limit reached')
+			motorStop(baseMotorPins)
+			break
+	while (True):
+		moveSteps(quarterMotorPins, 1,3,1)  # rotating 360 deg clockwise, a total of 2048 steps in a circle, 512 cycles
+		if (GPIO.input(quarterSwitch) == GPIO.LOW):
+			print('Quarter limit reached')
+			motorStop(quarterMotorPins)
+			break
 
 
 def loop():
     while True:
-        moveSteps(baseMotorPins, 1,3,512)  # rotating 360 deg clockwise, a total of 2048 steps in a circle, 512 cycles
-        time.sleep(0.5)
-        moveSteps(0,3,512)  # rotating 360 deg anticlockwise
-        time.sleep(0.5)
+        moveSteps(baseMotorPins, 1,3,1)  # rotating 360 deg clockwise, a total of 2048 steps in a circle, 512 cycles
+        time.sleep(0.01)
 
 def destroy():
     GPIO.cleanup()             # Release resource
@@ -60,6 +66,6 @@ if __name__ == '__main__':     # Program entrance
     print ('Program is starting...')
     setup()
     try:
-        loop()
+        calibrate()
     except KeyboardInterrupt:  # Press ctrl-c to end the program.
         destroy()
