@@ -1,17 +1,17 @@
 import RPi.GPIO as GPIO
 import time
 
-baseMotorPins = (21,20,16,12)    # define pins connected to four phase ABCD of stepper motor
-quarterMotorPins = (19, 13, 6, 5)    # define pins connected to four phase ABCD of stepper motor
-quarterSwitch = 1
-baseSwitch = 7
+baseMotorPins = (5,6,13,19)    # define pins connected to four phase ABCD of stepper motor
+quarterMotorPins = (12, 25, 24, 23)    # define pins connected to four phase ABCD of stepper motor
+quarterSwitch = 17
+baseSwitch = 27
 CCWStep = (0x01,0x02,0x04,0x08) # define power supply order for rotating anticlockwise 
 CWStep = (0x08,0x04,0x02,0x01)  # define power supply order for rotating clockwise
 
 def setup():
 	GPIO.setmode(GPIO.BCM)
-	GPIO.setup(quarterSwitch, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-	GPIO.setup(baseSwitch, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+	GPIO.setup(quarterSwitch, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+	GPIO.setup(baseSwitch, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 	for pin in baseMotorPins:
 		GPIO.setup(pin,GPIO.OUT)
 	for pin in quarterMotorPins:
@@ -42,13 +42,15 @@ def motorStop(motor):
 def calibrate():
 	while (True):
 		moveSteps(baseMotorPins, 1,3,1)  # rotating 360 deg clockwise, a total of 2048 steps in a circle, 512 cycles
-		if (GPIO.input(baseSwitch) == GPIO.LOW):
+		if (GPIO.input(baseSwitch) == GPIO.HIGH):
 			print ('Base limit reached')
 			motorStop(baseMotorPins)
 			break
+	time.sleep(1)
 	while (True):
-		moveSteps(quarterMotorPins, 1,3,1)  # rotating 360 deg clockwise, a total of 2048 steps in a circle, 512 cycles
-		if (GPIO.input(quarterSwitch) == GPIO.LOW):
+		# moveSteps(quarterMotorPins, 1,3,1)  # rotating 360 deg clockwise, a total of 2048 steps in a circle, 512 cycles
+		print ('simulating the quarter gear motor movement')
+		if (GPIO.input(quarterSwitch) == GPIO.HIGH):
 			print('Quarter limit reached')
 			motorStop(quarterMotorPins)
 			break
