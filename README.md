@@ -3,9 +3,12 @@ a smart Alt-Az type star tracker
 
 ## documents
 
-idea ppt: https://docs.google.com/presentation/d/1V09LMWxtM6EQ7cZHFbPJ3HRUoUjyuCmjtu40eXvP8dM/edit?usp=sharing  
-Project Overview: https://docs.google.com/document/d/1-RgK3QuJ4uykZ0ImFwVufxx7JOQnr-Ly_n8QABVvBu4/edit?usp=sharing  
+idea ppt: [Google Slide](https://docs.google.com/presentation/d/1V09LMWxtM6EQ7cZHFbPJ3HRUoUjyuCmjtu40eXvP8dM/edit?usp=sharing) 
+
+Project Overview: [Google Doc](https://docs.google.com/document/d/1-RgK3QuJ4uykZ0ImFwVufxx7JOQnr-Ly_n8QABVvBu4/edit?usp=sharing)  
+
 H/W handwritten notes: see `3d_print_file/hardware_combinded_handwritten_notes.pdf`
+
 Final Report: https://www.overleaf.com/read/jtzwcjmzfpvb
 
 ## Hardware
@@ -32,13 +35,14 @@ pi4 gadget mode: https://howchoo.com/pi/raspberry-pi-gadget-mode#flash-raspberry
 
 connect pi4 via: `ssh -X pi@raspberrypi.local` (-X for enabling X11 server)
 
-plate solving:
+launch main user facing program: `sudo python3 motor_control.py`
 
-astronet API (internet needed): https://astroquery.readthedocs.io/en/latest/astrometry_net/astrometry_net.html  
-unknown (needs internet): https://github.com/tkarabela/platesolve-polar-align/blob/master/platesolve-polar-align.ipynb  
-all github plte solve topics: https://github.com/topics/plate-solving  
+wasd keys: move the mount continuously, press the reverse direction to stop
+ijkl keys: fine tune the location of the mount
+p key: confirm the mount is pointed at a pre-programmed target (default: moon at May 28th 2022)
+t key: continuous track the pointed location, only functions correctly after using p key and starts from a zeroed position.
 
-# Papers
+# Papers / libraries 
 
 https://link.springer.com/content/pdf/10.1023/A:1016391518972.pdf
 
