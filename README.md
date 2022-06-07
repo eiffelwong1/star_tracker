@@ -37,10 +37,10 @@ connect pi4 via: `ssh -X pi@raspberrypi.local` (-X for enabling X11 server)
 
 launch main user facing program: `sudo python3 motor_control.py`
 
-wasd keys: move the mount continuously, press the reverse direction to stop
-ijkl keys: fine tune the location of the mount
-p key: confirm the mount is pointed at a pre-programmed target (default: moon at May 28th 2022)
-t key: continuous track the pointed location, only functions correctly after using p key and starts from a zeroed position.
+wasd keys: move the mount continuously, press the reverse direction to stop.  
+ijkl keys: fine tune the location of the mount.  
+p key: confirm the mount is pointed at a pre-programmed target (default: moon at May 28th 2022).  
+t key: continuous track the pointed location, only functions correctly after using p key and starts from a zeroed position.  
 
 # Papers / libraries 
 
