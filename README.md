@@ -9,7 +9,7 @@ Project Overview: [Google Doc](https://docs.google.com/document/d/1-RgK3QuJ4uykZ
 
 H/W handwritten notes: see `3d_print_file/hardware_combinded_handwritten_notes.pdf`
 
-Final Report: https://www.overleaf.com/read/jtzwcjmzfpvb
+Final Report: see CSE_237D_Final_Report___Star_Tracker.pdf in repo (overleaf: https://www.overleaf.com/read/jtzwcjmzfpvb)
 
 ## Hardware
 
